@@ -168,7 +168,8 @@ table {
 }
 
 .nav-link:hover {
-    color: #2C97B5;
+    /* color: #2C97B5; */
+    transform: scale(1.1);
 
 }
 
