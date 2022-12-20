@@ -1,0 +1,356 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+    display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    background: #f6f9fc;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav'
+        'header header header'
+        'skills skills skills'
+        'projects projects projects'
+        'footer footer footer'
+    ;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#navigation {
+    grid-area: nav;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    background-color: #0b525b;
+    opacity: 90%;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.nav-link {
+    margin-right: 90px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: #f6f9fc;
+    opacity: 95%;
+}
+
+.nav-link:hover {
+    color: #2C97B5;
+
+}
+
+#about {
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 2rem 7rem;
+    text-align: justify;
+    color: #333333;
+    font-size: 1.3rem;
+}
+
+
+#illus img {
+    width: 40rem;
+
+}
+
+
+#tag-line {
+    font-size: 2.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    grid-column: 1/5;
+    line-height: 3rem;
+    font-weight: 500;
+    opacity: 80%;
+
+}
+
+#about p {
+    grid-column: 1/4;
+    font-weight: 500;
+    opacity: 80%;
+    line-height: 2rem;
+}
+
+#about h1 {
+    font-size: 6rem;
+    grid-column: 1/5;
+    /* display:inline-block; */
+}
+
+#links {
+    grid-column: 1/5;
+    grid-row: 2/3;
+
+}
+
+#links svg {
+    color: #0b525b;
+    width: 50px;
+    height: 50px;
+    opacity: 90%;
+    margin-right: 15px;
+    transition: 0.5s;
+    animation: updown 5s ease infinite
+}
+
+#links svg:hover {
+
+    transition: 0.5s;
+    opacity: 100%;
+    transform: scale(1.5);
+    transition: 0.5s;
+    animation: 0;
+
+}
+
+#workbtn {
+    grid-column: 1/5;
+    grid-row: 3/4;
+
+}
+
+#workbtn button {
+    width: 9rem;
+    color: white;
+    background-color: #0b525b;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: 0.5s;
+    margin-right: 15px;
+}
+
+#workbtn button:hover {
+    background-color: #f6f9fc;
+    color: #0b525b;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#skills {
+    max-width: 100%;
+    /* max-width: 1080px; */
+    display: grid;
+    place-items: center;
+    grid-area: skills;
+    height: 100vh;
+    font-size: 5rem;
+    box-sizing: border-box;
+    color: #333333;
+}
+#skills_group {
+    width: 100%;
+    padding: 5rem 5rem;
+    border-radius: 15px;
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 9rem;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* animation: updown 7s ease infinite */
+}
+#skills p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f6f9fc;
+}
+
+#skills svg {
+    width: 100px;
+    height: 100px;
+}
+
+
+#projects {
+    grid-area: projects;
+    height: 100vh;
+    display:grid;
+    place-items:center;
+    font-size: 5rem;
+}
+#projects h1{
+
+}
+.highlight {
+    color: #0b525b;
+
+}
+
+
+@keyframes updown {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
