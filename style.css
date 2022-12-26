@@ -155,6 +155,7 @@ table {
     display: flex;
     justify-content: end;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .nav-link {
