@@ -9,7 +9,8 @@ const closeBtnModal = document.querySelector('#closeBtn')
 projectBtn.addEventListener('click', () => {
     scrollToProject()
 })
-projectLink.addEventListener('click', () => {
+projectLink.addEventListener('click', (e) => {
+    e.preventDefault()
     scrollToProject()
 })
 function scrollToProject() {
