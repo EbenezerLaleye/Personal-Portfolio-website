@@ -538,9 +538,9 @@ table {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 25%;
-    right: 35%;
+    left: 50%;
+    top: 50%;
+    /* right: 35%; */
     max-width: 600px;
     overflow: auto;
     color: #f6f9fc;
