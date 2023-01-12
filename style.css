@@ -363,7 +363,7 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     padding: 2rem;
     max-width: 500px;
     width: 100%;
@@ -373,14 +373,16 @@ table {
 .project img {
     width: 25rem;
     height: 20rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px #212529;
 }
 
 .project h4 {
     font-size: 1.25rem;
     color: #f6f9fc;
     font-weight: 500;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 
 }
 
@@ -539,7 +541,7 @@ table {
     max-width: 600px;
     overflow: auto;
     color: #f6f9fc;
-    background-color: #0b525b;
+    background-color: #333333;
     border-radius: 15px;
     text-align: center;
     opacity: 90%;
@@ -585,6 +587,11 @@ table {
 
     #contact {
         flex-direction: column;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
     }
 
     .line {
