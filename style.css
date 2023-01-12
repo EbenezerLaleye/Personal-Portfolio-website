@@ -113,8 +113,19 @@ body {
         'header header header'
         'skills skills skills'
         'projects projects projects'
+        'contact contact contact'
         'footer footer footer'
     ;
+    box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 ol,
@@ -328,11 +339,99 @@ table {
     font-size: 5rem;
 }
 
-/* #projects h1{
+#contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f6f9fc;
+    background-color: #333333;
+    padding: 3rem;
+}
 
-} */
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2rem;
+    /* background: rgba(0, 0, 0, 0.2); */
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem;
+    border-radius: 1.3rem;
+
+}
+
+.contact-info span {
+    margin-right: 10px;
+}
+
+.line {
+    border: 2px solid #f6f9fc;
+    min-height: 30vh;
+    margin-right: 2rem;
+    /* display: none; */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+#contact-form h3 {
+    font-size: 2.25rem;
+    padding: 2rem;
+    text-align: center;
+
+
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#contact-details input {
+    display: block;
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    color: #f6f9fc;
+    font-size: 1.15rem;
+    border-radius: 1.3rem;
+
+}
+
+#contact-details textarea {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.8rem;
+    color: #f6f9fc;
+    flex: 1;
+}
+
+.submit {
+    cursor: pointer;
+}
+
 .highlight {
     color: #0b525b;
+
 
 }
 
@@ -415,5 +514,13 @@ table {
 @media(max-width:800px) {
     #skills_group {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    .line {
+        display: none;
     }
 }
