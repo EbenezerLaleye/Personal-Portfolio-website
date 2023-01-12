@@ -160,7 +160,7 @@ table {
     position: sticky;
     overflow: hidden;
     z-index: 1;
-    /* top: 0; */
+    top: 0;
     background-color: #0b525b;
     opacity: 90%;
 }
@@ -355,7 +355,7 @@ table {
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    /* gap: 40px; */
+    gap: 20px;
     padding: 2rem;
 }
 
@@ -492,6 +492,7 @@ table {
     border-radius: 0.8rem;
     color: #f6f9fc;
     flex: 1;
+    font-size: 1.25rem;
 }
 
 .submit {
