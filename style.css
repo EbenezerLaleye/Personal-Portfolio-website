@@ -154,7 +154,7 @@ table {
 }
 
 #navigation {
-    display: flex;
+    display: none;
     justify-content: end;
     grid-area: nav;
     position: sticky;
@@ -205,11 +205,10 @@ table {
 }
 
 #intro {
-    /* display: grid; */
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem 0 2rem 7rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin: 0;
     text-align: justify;
     color: #333333;
     font-size: 1.3rem;
@@ -307,12 +306,12 @@ table {
 
 #skills_group {
     width: 100%;
-    padding: 5rem 5rem;
+    padding: 2rem 2rem;
     border-radius: 15px;
     background-color: #333333;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 9rem;
+    column-gap: 5rem;
     row-gap: 4rem;
     justify-content: center;
     align-items: center;
@@ -328,8 +327,8 @@ table {
 }
 
 #skills svg {
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
 }
 
 
@@ -372,7 +371,7 @@ table {
 }
 
 .project img {
-    width: 80%;
+    width: 60%;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 5px #212529;
 }
@@ -411,19 +410,20 @@ table {
     grid-area: contact;
     display: flex;
     flex-direction: row;
+    column-gap: 50px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     color: #f6f9fc;
     background-color: #333333;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #contact-info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 2rem;
+    row-gap: 50px;
+    /* padding: 2rem; */
     /* background: rgba(0, 0, 0, 0.2); */
     max-width: 500px;
     width: 100%;
@@ -586,6 +586,10 @@ table {
 @media(max-width:970px) {
     #skills_group {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #intro {
+        padding: 0;
     }
 
     #contact {
