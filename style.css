@@ -154,7 +154,7 @@ table {
 }
 
 #navigation {
-    display: none;
+    display: flex;
     justify-content: end;
     grid-area: nav;
     position: sticky;
@@ -163,6 +163,7 @@ table {
     top: 0;
     background-color: #0b525b;
     opacity: 90%;
+    width: 100%;
 }
 
 #nav-links {
@@ -590,6 +591,16 @@ table {
 
     #intro {
         padding: 0;
+    }
+
+    #nav-links {
+        width: 100%;
+        justify-content: space-around;
+        /* padding: 0; */
+    }
+
+    .nav-link {
+        margin-right: 0;
     }
 
     #contact {
