@@ -327,6 +327,10 @@ table {
     color: #f6f9fc;
 }
 
+#skills h2 {
+    font-size: clamp(60px, 6vw, 300px);
+}
+
 #skills svg {
     width: 40%;
     height: 40%;
