@@ -541,11 +541,11 @@ table {
 .modal {
 
     display: none;
-    position: fixed;
-    z-index: 1;
-    left: 30%;
-    top: 30%;
-    /* right: 25%; */
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 600px;
     overflow: auto;
     color: #f6f9fc;
