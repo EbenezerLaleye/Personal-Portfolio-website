@@ -1,7 +1,7 @@
 :root {
     --primary-color: #01161E;
     --secondary-color: #0E3444;
-    --highlight-color: #034A63;
+    --highlight-color: #25C0F8;
 
 }
 
@@ -41,6 +41,8 @@ h2 {
     margin: 10px 0;
 }
 
+/* Navbar */
+
 .navbar {
     background-color: var(--primary-color);
     color: #fff;
@@ -70,4 +72,31 @@ h2 {
 
 .navbar h1 {
     margin: 2px 2px;
+}
+
+/* Hero */
+.hero {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.hero .grid {
+    grid-template-columns: 55% 45%;
+}
+
+.hero-text {
+    padding: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.portrait {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    animation: updown 5s ease infinite;
 }
