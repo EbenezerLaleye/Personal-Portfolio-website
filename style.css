@@ -65,7 +65,7 @@ h2 {
 }
 
 .navbar a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--highlight-color);
 }
 
 
@@ -74,24 +74,33 @@ h2 {
     margin: 2px 2px;
 }
 
+nav {
+    padding: 1rem 0;
+}
+
 /* Hero */
 .hero {
     height: 400px;
     background-color: var(--primary-color);
     color: #fff;
     position: relative;
+
 }
 
 .hero .grid {
     grid-template-columns: 55% 45%;
+    overflow: visible;
 }
 
 .hero-text {
     padding: 1rem;
+
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+
 }
 
 .portrait {
@@ -99,4 +108,20 @@ h2 {
     top: 30%;
     left: 60%;
     animation: updown 5s ease infinite;
+    z-index: 100;
+}
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
 }
