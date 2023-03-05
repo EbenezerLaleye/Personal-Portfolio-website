@@ -55,6 +55,7 @@ h2 {
 
 .navbar .flex {
     justify-content: space-between;
+    padding: 1.5rem 0;
 }
 
 .navbar a {
@@ -74,9 +75,7 @@ h2 {
     margin: 2px 2px;
 }
 
-nav {
-    padding: 1rem 0;
-}
+nav {}
 
 /* Hero */
 .hero {
@@ -93,6 +92,7 @@ nav {
 }
 
 .hero-text {
+    height: auto;
     padding: 1rem;
 
 }
@@ -105,12 +105,20 @@ nav {
 
 .hero a {
     color: #fff;
-    margin: 30px 5px;
+    height: auto;
+    margin: 0 5px;
+
 }
 
-.hero li {
-    margin: 30px 5px;
+.hero i:hover {
+    color: var(--highlight-color);
+    transform: scale(1.2)
 }
+
+.social {
+    margin-top: 8px;
+}
+
 
 .portrait {
     position: absolute;
@@ -133,4 +141,36 @@ nav {
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
+}
+
+.lang_tools {
+    padding-top: 100px;
+    height: 500px;
+}
+
+.lang_tools .flex {
+    flex-direction: column;
+
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.languages img {
+    width: 200px;
+}
+
+.language {
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.language:hover {
+    transform: translateY(-15px);
 }

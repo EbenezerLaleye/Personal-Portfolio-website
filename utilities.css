@@ -27,6 +27,11 @@
     gap: 40px;
 }
 
+.title {
+    font-size: 2rem;
+    padding: 30px;
+}
+
 .lead {
     font-size: 1.4rem;
 }
