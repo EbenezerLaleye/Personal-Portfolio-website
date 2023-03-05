@@ -103,6 +103,15 @@ nav {
 
 }
 
+.hero a {
+    color: #fff;
+    margin: 30px 5px;
+}
+
+.hero li {
+    margin: 30px 5px;
+}
+
 .portrait {
     position: absolute;
     top: 30%;
