@@ -178,7 +178,54 @@ nav {}
 .projects {
     background-color: var(--primary-color);
     color: #fff;
-    height: 80vh;
+    height: auto;
     margin-top: 50px;
-    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8)
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.projects .grid {
+    grid-template-columns: 41% 59%;
+    text-align: center;
+    gap: 10px;
+}
+
+.project-img {
+    place-self: center;
+
+    margin: 20px 0;
+
+}
+
+.project-img img {
+    border-radius: 2rem;
+    width: 400px;
+    height: 350px;
+}
+
+.project {
+    color: #333;
+    margin-bottom: 40px;
+
+}
+
+.project-text {
+    padding: 0.8rem;
+}
+
+.projectlinks {
+    display: flex;
+    justify-content: center;
+}
+
+.project-link {
+    margin: 15px;
+    color: var(--primary-color);
+    font-weight: 400;
+    display: block;
+}
+
+.project-link:hover {
+    color: var(--highlight-color);
+    transform: scale(1.1);
 }
