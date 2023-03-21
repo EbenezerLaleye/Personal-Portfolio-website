@@ -144,7 +144,7 @@ nav {}
 
 .lang_tools {
     padding-top: 100px;
-    height: 100vh;
+    height: 120vh;
 }
 
 .lang_tools .flex {
@@ -330,3 +330,62 @@ nav {}
 
 
 }
+@media(max-width:1000px) {
+
+    .grid,
+    .hero .grid,
+    .projects .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    .hero,
+    .lang_tools,
+    .projects,
+    .contact {
+        height: auto;
+    }
+
+    .hero-text,
+    .project-text,
+    .contact-text {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .portrait {
+        display: none;
+    }
+
+    .cli .grid>*:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero img,
+    .projects img,
+    .skills img {
+        place-self: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+/* Mobile */
+
+/* @media(max-width:500px) {
+    .navbar {
+        height: 110px
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 0.8rem;
+        background-color: rgba(0, 0, 0, 0.1)
+    }
+} */
