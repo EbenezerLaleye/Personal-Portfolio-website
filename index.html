@@ -1,174 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="utilities.css" />
+		<title>Ebenezer's Portfolio</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utilities.css">
-    <title>Ebenezer's Portfolio</title>
-</head>
+	<body>
+		<div class="navbar">
+			<div class="container flex">
+				<h1 class="logo">E.<span class="highlight">O</span>.Laleye</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#" id="projectBtn">Projects</a></li>
+						<li><a href="#" id="contactBtn">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<section class="hero">
+			<div class="container grid">
+				<div class="hero-text">
+					<h1>Hi!</h1>
+					<h1>My name is <span class="highlight">Ebenezer</span></h1>
+					<p class="lead">
+						I'm a self-taught
+						<span class="highlight">Front-end Developer</span> from Ireland!
+					</p>
+					<p class="lead2">
+						I love building beautiful and modern websites. I'm a lifelong
+						learner and have been into all things tech for as long I as can
+						remember!
+					</p>
+					<div class="social">
+						<a href="https://github.com/EbenezerLaleye"
+							><i class="fab fa-github fa-2x"></i
+						></a>
+						<a href="https://www.linkedin.com/in/ebenezerlaleye/"
+							><i class="fab fa-linkedin fa-2x"></i
+						></a>
+					</div>
+				</div>
+				<div class="portrait card">
+					<img src="/svg/about.svg" alt="" />
+				</div>
+			</div>
+		</section>
+		<section class="lang_tools">
+			<div class="container flex">
+				<h2 class="title">Languages and Tools</h2>
+				<div class="languages">
+					<div class="language card">
+						<h2>HTML5</h2>
+						<img src="svg/HTML.svg" alt="" />
+					</div>
+					<div class="language card">
+						<h2>CSS3</h2>
+						<img src="svg/CSS.svg" alt="" />
+					</div>
+					<div class="language card">
+						<h2>Bootstrap</h2>
+						<img src="svg/Bootstrap.svg" alt="" />
+					</div>
+					<div class="language card">
+						<h2>Javascript</h2>
+						<img src="svg/Javascript.svg" alt="" />
+					</div>
+					<div class="language card">
+						<h2>React</h2>
+						<img src="svg/react.svg" alt="" />
+					</div>
+					<div class="language card">
+						<h2>Github</h2>
+						<img src="svg/github.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-<body>
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">E.<span class="highlight">O</span>.Laleye</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" id="projectBtn">Projects</a></li>
-                    <li><a href="#" id="contactBtn">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <section class="hero">
-        <div class="container grid">
-            <div class="hero-text">
-                <h1>Hi!</h1>
-                <h1>My name is <span class="highlight">Ebenezer</span></h1>
-                <p class="lead">I'm a self-taught <span class="highlight">Front-end Developer</span> from Ireland!</p>
-                <p class="lead2">I love building beautiful and modern websites. I'm a lifelong learner and have been
-                    into all things
-                    tech for as long I as can remember!</p>
-                <div class="social">
-                    <a href="https://github.com/EbenezerLaleye"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/ebenezerlaleye/"><i class="fab fa-linkedin fa-2x"></i></a>
-                </div>
-            </div>
-            <div class="portrait card">
-                <img src="/svg/about.svg" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="lang_tools">
-        <div class="container flex">
-            <h2 class="title">Languages and Tools</h2>
-            <div class="languages">
-                <div class="language card">
-                    <h2>HTML5</h2>
-                    <img src="svg/HTML.svg" alt="">
-                </div>
-                <div class="language card">
-                    <h2>CSS3</h2>
-                    <img src="svg/CSS.svg" alt="">
-                </div>
-                <div class="language card">
-                    <h2>Bootstrap</h2>
-                    <img src="svg/Bootstrap.svg" alt="">
-                </div>
-                <div class="language card">
-                    <h2>Javascript</h2>
-                    <img src="svg/Javascript.svg" alt="">
-                </div>
-                <div class="language card">
-                    <h2>React</h2>
-                    <img src="svg/react.svg" alt="">
-                </div>
-                <div class="language card">
-                    <h2>Github</h2>
-                    <img src="svg/github.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="projects" id="projects">
+			<div class="container">
+				<h2 class="title">Projects</h2>
+				<div class="project grid">
+					<div class="project-img">
+						<img src="/img/artist page.png" alt="" />
+					</div>
+					<div class="project-text card">
+						<h2 class="highlight">Artist landing page</h2>
+						<p class="">
+							This artist website showcases the portfolio of a talented
+							individual, featuring a diverse range of their work in different
+							mediums. The clean and modern design allows for easy navigation
+							and showcasing of the artist's pieces. The site includes a bio
+							section, contact information, and a seprate concert page.
+						</p>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="title">Projects</h2>
-            <div class="project grid ">
-                <div class="project-img">
-                    <img src="/img/artist page.png" alt="">
-                </div>
-                <div class="project-text card">
-                    <h2 class="highlight">Artist landing page</h2>
-                    <p class="">This artist website showcases the portfolio of a talented individual, featuring a
-                        diverse range of
-                        their work in different mediums. The clean and modern design allows for easy navigation and
-                        showcasing of the artist's pieces. The site includes a bio section, contact information, and a
-                        seprate concert page.</p>
+						<div class="projectlinks">
+							<a
+								href="https://github.com/EbenezerLaleye/Artist-website"
+								class="project-link"
+								>Code Source</a
+							>
+							<a href="https://otolaleye.com" class="project-link">Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="project grid">
+					<div class="project-img">
+						<img src="/img/weather app.png" alt="" />
+					</div>
+					<div class="project-text card">
+						<h2 class="highlight">Weather App</h2>
+						<p class="">
+							The app utilizes HTML, CSS and JavaScript and allows users to
+							search for current weather conditions in any location around the
+							world. It utilizes the OpenWeatherMap API to retrieve data such as
+							temperature, humidity, wind speed, and weather description. The
+							user interface is sleek and easy to navigate.
+						</p>
+						<div class="projectlinks">
+							<a
+								href="https://github.com/EbenezerLaleye/Weather-web-app"
+								class="project-link"
+								>Code Source</a
+							>
+							<a href="https://weatherapp-eol.netlify.app" class="project-link"
+								>Website</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="project grid">
+					<div class="project-img">
+						<img src="/img/conference.png" alt="" />
+					</div>
+					<div class="project-text card">
+						<h2 class="highlight">Tech Conference page</h2>
+						<p class="">
+							The artist website showcases the portfolio of a talented
+							individual, featuring a diverse range of their work in different
+							mediums. The clean and modern design allows for easy navigation
+							and showcasing of the artist's pieces. The site includes a bio
+							section, contact information, and a seprate concert page.
+						</p>
 
-                    <div class="projectlinks">
-                        <a href="https://github.com/EbenezerLaleye/Artist-website" class="project-link">Code Source</a>
-                        <a href="https://otolaleye.com" class="project-link">Website</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project grid ">
-                <div class="project-img">
-                    <img src="/img/weather app.png" alt="">
-                </div>
-                <div class="project-text card">
-                    <h2 class="highlight">Weather App</h2>
-                    <p class="">The app utilizes HTML, CSS and JavaScript and allows users to search for current weather
-                        conditions
-                        in any location around the world. It
-                        utilizes the OpenWeatherMap API to retrieve data such as temperature, humidity, wind speed, and
-                        weather description. The user interface is sleek and easy to navigate.</p>
-                    <div class="projectlinks">
-                        <a href="https://github.com/EbenezerLaleye/Weather-web-app" class="project-link">Code Source</a>
-                        <a href="https://weatherapp-eol.netlify.app" class="project-link">Website</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project grid ">
-                <div class="project-img">
-                    <img src="/img/conference.png" alt="">
-                </div>
-                <div class="project-text card">
-                    <h2 class="highlight">Tech Conference page</h2>
-                    <p class="">The artist website showcases the portfolio of a talented individual, featuring a
-                        diverse range of
-                        their work in different mediums. The clean and modern design allows for easy navigation and
-                        showcasing of the artist's pieces. The site includes a bio section, contact information, and a
-                        seprate concert page.</p>
+						<div class="projectlinks">
+							<a
+								href="https://github.com/EbenezerLaleye/Artist-website"
+								class="project-link"
+								>Code Source</a
+							>
+							<a href="https://otolaleye.com" class="project-link">Website</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container flex">
+				<div id="contact-info">
+					<div class="contact-info">+3530892559019</div>
+					<div class="contact-info">ebenezer.laleye@gmail.com</div>
+					<div class="contact-info">Dublin, Ireland</div>
+				</div>
+				<!-- <div class="line"></div> -->
+				<div id="contact-form">
+					<h3>Get in Touch!</h3>
+					<form
+						action="https://formspree.io/f/xbjejvwr"
+						method="POST"
+						id="contact-details"
+					>
+						<div class="input-wrap">
+							<input
+								type="text"
+								name="fullname"
+								id="fullname"
+								placeholder="Your Name"
+							/>
+						</div>
+						<div class="input-wrap">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Your email"
+								required
+							/>
+						</div>
+						<div class="input-wrap">
+							<textarea
+								name="message"
+								id="message"
+								rows="10"
+								placeholder="Your Message"
+							></textarea>
+						</div>
+						<div class="input-wrap">
+							<input type="submit" value="Submit" class="submit" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<script>
+			window.intercomSettings = {
+				created_at: 1457552104,
+				api_base: "https://api-iam.intercom.io",
+				app_id: "cv0xhku0",
+				user_id: "bc569f66-74af-485a-b0bc-2a2c2cfb0cb9",
+				name: "Max",
+			};
+		</script>
 
-                    <div class="projectlinks">
-                        <a href="https://github.com/EbenezerLaleye/Artist-website" class="project-link">Code Source</a>
-                        <a href="https://otolaleye.com" class="project-link">Website</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="container flex">
-                <div id="contact-info">
-                    <div class="contact-info"> +3530892559019</div>
-                    <div class="contact-info">
-                        ebenezer.laleye@gmail.com </div>
-                    <div class="contact-info"> Dublin, Ireland</div>
-                </div>
-                <!-- <div class="line"></div> -->
-                <div id="contact-form">
-                    <h3>Get in Touch!</h3>
-                    <form action="https://formspree.io/f/xbjejvwr" method="POST" id="contact-details">
-                        <div class="input-wrap">
-                            <input type="text" name="fullname" id="fullname" placeholder="Your Name">
-                        </div>
-                        <div class="input-wrap">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                        <div class="input-wrap">
-                            <textarea name="message" id="message" rows="10" placeholder="Your Message"></textarea>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="submit" value="Submit" class="submit" />
-                        </div>
-        
-                    </form>
-                </div>
-        </div>
-    </section>
-    <script src="script.js"></script>
-</body>
-
+		<script>
+			// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cv0xhku0'
+			(function () {
+				var w = window;
+				var ic = w.Intercom;
+				if (typeof ic === "function") {
+					ic("reattach_activator");
+					ic("update", w.intercomSettings);
+				} else {
+					var d = document;
+					var i = function () {
+						i.c(arguments);
+					};
+					i.q = [];
+					i.c = function (args) {
+						i.q.push(args);
+					};
+					w.Intercom = i;
+					var l = function () {
+						var s = d.createElement("script");
+						s.type = "text/javascript";
+						s.async = true;
+						s.src = "https://widget.intercom.io/widget/cv0xhku0";
+						var x = d.getElementsByTagName("script")[0];
+						x.parentNode.insertBefore(s, x);
+					};
+					if (document.readyState === "complete") {
+						l();
+					} else if (w.attachEvent) {
+						w.attachEvent("onload", l);
+					} else {
+						w.addEventListener("load", l, false);
+					}
+				}
+			})();
+			Intercom("update");
+		</script>
+		<script src="script.js"></script>
+	</body>
 </html>
